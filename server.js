@@ -92,7 +92,7 @@ app.post("/api/new-project", upload.single('image'), async (req, res) => {
       name: req.body.name,
       description: req.body.description,
       techUsed: req.body.techUsed,
-      image: 'http://' + req.get('host') + '/images/' + req.file.originalname,
+      image: 'https://' + req.get('host') + '/images/' + req.file.originalname,
       link: req.body.link
     }
 
